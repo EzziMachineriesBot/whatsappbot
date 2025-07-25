@@ -98,7 +98,9 @@ app.get('/webhook', (req, res) => {
     res.sendStatus(403);
   }
 });
-
+app.get('/', (req, res) => {
+  res.send('✅ WhatsApp Bot is Live!');
+});
 app.listen(PORT, () => {
   console.log(`✅ Server running on port ${PORT}`);
 });
